@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpookyCostumes - Premium Halloween Costumes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Creepy&family=Fredoka+One:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><i class="fas fa-ghost"></i> SpookyCostumes</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#costumes">Costumes</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Perfect Halloween Costume</h1>
+                <p class="hero-subtitle">From spooky to silly, we have costumes for every character and every age!</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Shop Now</button>
+                    <button class="btn-secondary">View Deals</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-costumes">
+                    <div class="costume-float costume-1">🧛‍♂️</div>
+                    <div class="costume-float costume-2">🎃</div>
+                    <div class="costume-float costume-3">👻</div>
+                    <div class="costume-float costume-4">🦇</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="adults">
+                    <div class="category-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Adult Costumes</h3>
+                    <p>Scary, funny, and creative costumes for adults</p>
+                </div>
+                <div class="category-card" data-category="kids">
+                    <div class="category-image">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Kids Costumes</h3>
+                    <p>Safe and fun costumes for little monsters</p>
+                </div>
+                <div class="category-card" data-category="couples">
+                    <div class="category-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Couples Costumes</h3>
+                    <p>Matching costumes for the perfect pair</p>
+                </div>
+                <div class="category-card" data-category="pets">
+                    <div class="category-image">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Pet Costumes</h3>
+                    <p>Adorable costumes for your furry friends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="costumes" class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Costumes</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section id="accessories" class="accessories">
+        <div class="container">
+            <h2 class="section-title">Halloween Accessories</h2>
+            <div class="accessory-grid">
+                <div class="accessory-item">
+                    <div class="accessory-icon">🎭</div>
+                    <h3>Masks</h3>
+                    <p>Complete your look with our spooky masks</p>
+                </div>
+                <div class="accessory-item">
+                    <div class="accessory-icon">🕷️</div>
+                    <h3>Props</h3>
+                    <p>Scary props to enhance your costume</p>
+                </div>
+                <div class="accessory-item">
+                    <div class="accessory-icon">💀</div>
+                    <h3>Makeup</h3>
+                    <p>Professional Halloween makeup kits</p>
+                </div>
+                <div class="accessory-item">
+                    <div class="accessory-icon">🦇</div>
+                    <h3>Decorations</h3>
+                    <p>Spooky decorations for your home</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals">
+        <div class="container">
+            <h2 class="section-title">Spooky Deals</h2>
+            <div class="deal-banner">
+                <div class="deal-content">
+                    <h3>🎃 50% OFF Selected Costumes!</h3>
+                    <p>Limited time offer - Don't miss out on these terrifying deals!</p>
+                    <button class="btn-primary">Shop Sale</button>
+                </div>
+                <div class="deal-timer">
+                    <div class="timer-item">
+                        <span class="timer-number" id="days">00</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="hours">00</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="minutes">00</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="seconds">00</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Spooky!</h2>
+                <p>Get the latest costume updates and exclusive deals delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-ghost"></i> SpookyCostumes</h3>
+                    <p>Your one-stop shop for the perfect Halloween costume. Quality costumes, fast shipping, and spooky good prices!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#costumes">Costumes</a></li>
+                        <li><a href="#accessories">Accessories</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> (555) 123-SPOOK</p>
+                    <p><i class="fas fa-envelope"></i> hello@spookycostumes.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Haunted Street, Spooky City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SpookyCostumes. All rights reserved. Made with <i class="fas fa-heart"></i> for Halloween lovers!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="cartTotal">0.00</span></h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="clearCart">Clear Cart</button>
+                <button class="btn-primary" id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
